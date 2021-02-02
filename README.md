@@ -8,9 +8,30 @@ The purpose of this analysis is to assess the best way to sample data for a mach
 ![](images/naive_oversampling.png)
 
 The above output tells us this:
-- The precision for high risk loans is extremely low while the precision for low risk loans is extremely high. In other words, this model is highly effective at predicting true positive low risk loans but is likely to have many false positives for high risk loans. 
+- The precision for high risk loans is extremely low while the precision for low risk loans is a perfect 100%. This model is highly effective at predicting true positive low risk loans but is likely to have many false positives for high risk loans. 
 - The recall indicates that this model is just above average at correctly predicting high risk and low risk loans. In other words, these recall numbers indicate that this model only predicts correctly 72% of the time for high risk loans and 61% of the time for low risk loans.
 - The balanced accuracy score for is the average recall of each class (low risk and high risk), which is 66.79%. This model is 66.79% accurate at making predictions.
 
 ### SMOTE Oversampling
 ![](images/SMOTE.png)
+
+The above output tells us this:
+- The precision for high risk loans is extremely low while the precision for low risk loans is a perfect 100%. This model is highly effective at predicting true positive low risk loans but is likely to have many false positives for high risk loans. 
+- The recall indicates that this model can predict 63% of high risk loans correctly and 69% of low risk loans correctly. 
+- The balanced accuracy score is 66.22%, which means that this model is 66.22% likely to predict the correct loan risk category.
+
+### Undersampling
+![](images/undersampling.png)
+
+- The precision for high risk loans is extremely low while the precision for low risk loans is a perfect 100%. This model is highly effective at predicting true positive low risk loans but is likely to have many false positives for high risk loans. 
+- The recall score indicates that this model can correctly predict high risk loans 68% of the time and low risk loans 41% of the time.
+- The balanced accuracy score is 54.7%, which means that this model can correctly predict the loan status about 55% of the time.
+
+### Combination (SMOTEEN)
+![](images/SMOTEEN.png)
+
+- The precision for high risk loans is extremely low while the precision for low risk loans is a perfect 100%. This model is highly effective at predicting true positive low risk loans but is likely to have many false positives for high risk loans. 
+- The recall score indicates that this model can correctly predict high risk loans 72% of the time and low risk loans 57% of the time.
+- The balanced accuracy score is 64.47%, meaning that this model can make correct predictions about 64.47% of the time. 
+
+### Balanced Random Forest Classifier
