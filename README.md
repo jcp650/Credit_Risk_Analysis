@@ -45,3 +45,7 @@ The purpose of this analysis is to assess the best way to sample data for a mach
 - The precision for high risk loans is still extremely low while the precision for low risk loans is a perfect 100%. This model is highly effective at predicting true positive low risk loans but is likely to have many false positives for high risk loans. 
 - The recall indicates that this model can correctly predict 92% of high risk loans and 94% of low risk loans.
 - The balanced accuracy score is 93.29%, meaning that this model's predictions are 93% accurate. 
+
+## Summary
+
+All of these models are highly effective at predicting low risk loans, but are not effective at predicting high risk loans. The model using the easy ensemble classifier has the highest recall, balanced accuracy score, and highest precision for high risk loans, but is still dismal at predicting high risk loans at 9%. This means that even though the easy ensemble classifier is 93% accurate, the positive classification of high risk loans is only reliable 9% of the time. This could lead to a large number high risk loans being falsely classified as low risk loans.
